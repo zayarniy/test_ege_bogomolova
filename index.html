@@ -15,12 +15,12 @@
 <body>
     <div class="container"><!--Обязательно создаем div с классом container-->
         <div class="row">
-            <div class="col">
+            <div class="col d-flex justify-content-center">
                 <h1>Тест по информатике</h1>
             </div>
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col bg-white">
                 <table border="1" id="q1">
                     <tr>
                         <td rowspan="3">1</td>
@@ -40,7 +40,7 @@
                     </tr>
                     <tr>
                         <td colspan="5">
-                            <input id="a1" type="text" class="answer" placeholder="Ответ" />
+                            <input class="form-control" style="width: 200px;" id="a1" type="text" class="answer" placeholder="Ответ" />
                         </td>
                     </tr>
                 </table>
@@ -64,7 +64,7 @@
                     </tr>
                     <tr>
                         <td colspan="5">
-                            <input id="a2" type="text" class="answer" placeholder="Ответ" />
+                            <input  class="form-control" style="width: 200px;"  id="a2" type="text" class="answer" placeholder="Ответ" />
                         </td>
                     </tr>
                 </table>
@@ -88,7 +88,7 @@
                     </tr>
                     <tr>
                         <td colspan="5">
-                            <input id="a3" type="text" class="answer" placeholder="Ответ" />
+                            <input  class="form-control" style="width: 200px;"  id="a3" type="text" class="answer" placeholder="Ответ" />
                         </td>
                     </tr>
                 </table>
@@ -96,14 +96,14 @@
         </div><!--row-->
         <div class="row">
             <div class="col">
-                <button onclick="Check()">Проверить</button>
+                <button  class="btn btn-dark" onclick="Check()">Проверить</button>
                 <div>Правильно:<span id="score"></span></div>
                 <p>Разработчики:
                     Иванов Иван, Петров Андрей
                 </p>
                 <!------------ Сохранение и загрузка ---------------------->
-                <button onclick="Save()">Сохранить результаты</button>
-                <button onclick="Load()">Загрузить результаты</button>
+                <button class="btn btn-dark" onclick="Save()">Сохранить результаты</button>
+                <button class="btn btn-dark" onclick="Load()">Загрузить результаты</button>
                 <!------------ Сохранение и загрузка ---------------------->
             </div>
         </div>
